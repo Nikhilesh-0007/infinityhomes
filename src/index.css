@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-charcoal: #1F1F1F;
+  --color-red: #E53935;
+  --color-red-bright: #FF4D4F;
+  --color-bg: #FFFFFF;
+  --color-section-bg: #F8F9FA;
+  --color-card-bg: #FFFFFF;
+  --color-border: #E5E7EB;
+  --color-heading: #111827;
+  --color-body: #6B7280;
+  --color-success: #16A34A;
+  --color-footer: #111111;
+
+  --gradient-primary: linear-gradient(135deg, #E53935, #FF4D4F);
+
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius-card: 18px;
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--color-heading);
+  }
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

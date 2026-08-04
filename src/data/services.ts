@@ -1,0 +1,88 @@
+import { Service } from '../types';
+
+export const servicesData: Service[] = [
+  {
+    id: 'srv-1',
+    title: 'Residential Plots',
+    description: 'HMDA & DTCP approved clear-title open plots with 100% Vastu compliance, underground utilities, and grand entrance layouts in top growth corridors.',
+    icon: 'MapPin',
+    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-2',
+    title: 'Luxury Villas',
+    description: 'Gated triplex and duplex villas featuring private pools, elevator options, home automation, and 5-star resort clubhouses in Kokapet and Tellapur.',
+    icon: 'Home',
+    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-3',
+    title: 'Modern Apartments',
+    description: 'High-rise 2, 3 & 4 BHK luxury residences with 80% open green space, sky decks, and high rental demand near Financial District and Hitec City.',
+    icon: 'Building2',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-4',
+    title: 'Farm Lands',
+    description: 'Managed agricultural & weekend farm plots with fruit plantation, drip irrigation, and resort access in Mokila and Shankarpally.',
+    icon: 'Trees',
+    image: 'https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-5',
+    title: 'Commercial Spaces',
+    description: 'Grade-A office suites, retail outlets, and commercial floors in prime IT corridors offering high returns and stable capital growth.',
+    icon: 'Building',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-6',
+    title: 'Investment Consulting',
+    description: 'Data-driven land advisory, market trend forecasting, location selection, and portfolio optimization for maximum capital appreciation.',
+    icon: 'TrendingUp',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-7',
+    title: 'Home Loan Assistance',
+    description: 'End-to-end home loan processing with pre-approved project ties from SBI, HDFC, ICICI, and Axis Bank with competitive interest rates.',
+    icon: 'CreditCard',
+    image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-8',
+    title: 'Documentation Support',
+    description: 'Thorough review of link documents, pahanis, ECs, survey maps, and revenue records to ensure 100% legal clarity before purchase.',
+    icon: 'FileText',
+    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-9',
+    title: 'Legal Verification',
+    description: 'Comprehensive legal audit by senior High Court advocate panel validating title deeds, Encumbrance Certificates, and RERA compliance.',
+    icon: 'ShieldCheck',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-10',
+    title: 'Registration Assistance',
+    description: 'Hassle-free slot booking on Telangana registration portals, stamp duty calculations, and on-site executive coordination at sub-registrar offices.',
+    icon: 'CheckCircle2',
+    image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-11',
+    title: 'Site Visit Assistance',
+    description: 'Complimentary luxury AC chauffeur-driven vehicle pickup and drop for personalized site visits across all Hyderabad property locations.',
+    icon: 'Car',
+    image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'srv-12',
+    title: 'Investment Planning',
+    description: 'Tailored short-term and long-term land land banking strategies customized for high-net-worth individuals, NRIs, and institutional investors.',
+    icon: 'PieChart',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80',
+  },
+];
