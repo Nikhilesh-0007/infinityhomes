@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
+import { ScrollToTop } from './components/layout/ScrollToTop';
 import { FloatingActionButtons } from './components/ui/FloatingActionButtons';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
@@ -15,6 +16,7 @@ export const App: React.FC = () => {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <div className="min-h-screen flex flex-col font-body bg-white text-body">
           <Navbar />
           <main className="flex-grow">
