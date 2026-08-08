@@ -11,12 +11,13 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center">
               <img
-                src="/Main_Logo_PNG.png"
+                src="/Main_Logo_PNG copy.png"
                 alt="Infinity Homes Logo"
                 className="h-12 sm:h-14 w-auto object-contain bg-white px-2 py-1 rounded-lg"
               />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
+              <span className="text-brand-bright font-semibold block mb-1">Building Trust & Luxury Since 2010..</span>
               Your trusted real estate partner in Hyderabad. Premium HMDA & DTCP plots, luxury villas, apartments, farm lands, and commercial spaces.
             </p>
             <div className="flex items-center gap-2 text-xs text-emerald-400 bg-emerald-950/40 px-3 py-1.5 rounded-lg border border-emerald-800/50 w-fit">

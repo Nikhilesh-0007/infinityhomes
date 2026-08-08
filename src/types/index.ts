@@ -13,6 +13,36 @@ export interface Property {
   brochureUrl: string;
   featured: boolean;
   description: string;
+  tagline?: string;
+  subtitle?: string;
+  developer?: {
+    name: string;
+    officeAddress?: string[];
+    siteAddress?: string[];
+    phones?: string[];
+    architect?: {
+      name: string;
+      address?: string[];
+      phone?: string;
+    };
+  };
+  unitConfigurations?: {
+    flatNo: string;
+    type: string;
+    facing: string;
+    areaSft: number;
+    image?: string;
+  }[];
+  specifications?: {
+    category: string;
+    details: string;
+  }[];
+  locationAdvantages?: {
+    destination: string;
+    timeMinutes: string;
+    category: string;
+  }[];
+  importantNotes?: string[];
 }
 
 export interface BlogPost {

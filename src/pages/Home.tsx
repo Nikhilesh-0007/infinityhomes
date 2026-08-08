@@ -178,14 +178,14 @@ export const Home: React.FC = () => {
       </section>
 
       {/* 2. COMPANY OVERVIEW */}
-      <Section bgVariant="white" badge="About Infinity Homes" title="Building Trust & Luxury Since 2014">
+      <Section bgVariant="white" badge="About Infinity Homes" title="Building Trust & Luxury Since 2010..">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-5 text-gray-600 text-sm sm:text-base leading-relaxed">
             <p className="font-semibold text-charcoal text-lg">
               Infinity Homes is a premier real estate brand based in Hyderabad, specializing in premium residential layout development, luxury villas, gated apartments, and land banking solutions.
             </p>
             <p>
-              With over a decade of excellence, we have developed 120+ acres of prime land across high-potential growth corridors including Kollur, Kokapet, Tellapur, Mokila, and Shankarpally.
+              With 15+ years of experience, we have developed over 300+ acres across 20+ projects in high-potential growth corridors including Kollur, Kokapet, Tellapur, Mokila, and Shankarpally.
             </p>
             <p>
               Every Infinity Homes project is backed by 100% clear legal titles, complete HMDA/DTCP master plan sanctions, Vastu-compliant layouts, and bank loan pre-approvals from top national lenders.

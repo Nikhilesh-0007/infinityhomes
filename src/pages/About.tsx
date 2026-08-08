@@ -32,10 +32,10 @@ export const About: React.FC = () => {
         <Container className="relative z-10">
           <div className="max-w-3xl space-y-4">
             <span className="inline-block text-xs font-semibold uppercase tracking-widest text-brand-bright bg-white/10 px-3.5 py-1 rounded-full border border-white/20">
-              Our Legacy Since 2014
+              Our Legacy Since 2010
             </span>
             <h1 className="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-white">
-              A Decade of Real Estate Trust in Hyderabad
+              Building Trust & Luxury Since 2010..
             </h1>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
               Delivering high-appreciation open plots, luxury gated triplex villas, and commercial spaces built on 100% legal transparency and customer satisfaction.
@@ -49,10 +49,10 @@ export const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-4 text-gray-600 text-sm sm:text-base leading-relaxed">
             <p className="font-semibold text-charcoal text-lg">
-              Founded in 2014 in Hyderabad, Infinity Homes was established with a singular vision: to bring absolute legal clarity and world-class layout development standards to real estate buyers.
+              Founded in 2010 in Hyderabad, Infinity Homes was established with a singular vision: to bring absolute legal clarity and world-class layout development standards to real estate buyers.
             </p>
             <p>
-              Over the past 12+ years, we have successfully developed and delivered over 120+ acres of prime land across Hyderabad’s most sought-after growth corridors—including Kollur, Kokapet, Tellapur, Mokila, Shankarpally, and Bandlaguda Jagir.
+              Over the past 15+ years, we have successfully developed and delivered over 300+ acres across 20+ projects in Hyderabad’s most sought-after growth corridors—including Kollur, Kokapet, Tellapur, Mokila, Shankarpally, and Bandlaguda Jagir.
             </p>
             <p>
               Whether you are an end-user building your dream villa or a seasoned investor seeking land banking appreciation, Infinity Homes ensures every transaction is transparent, smooth, and legally bulletproof.

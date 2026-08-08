@@ -1,0 +1,186 @@
+export interface FlatUnit {
+  flatNo: string;
+  type: string; // '2 BHK' | '3 BHK'
+  facing: string;
+  areaSft: number;
+  image?: string;
+}
+
+export interface Specification {
+  category: string;
+  details: string;
+}
+
+export interface Amenity {
+  name: string;
+  category: string; // '1st Floor' | 'Stilt/Outdoor' | 'General'
+  description?: string;
+}
+
+export interface LocationDriveTime {
+  destination: string;
+  timeMinutes: string;
+  category: 'Schools & Colleges' | 'Connectivity';
+}
+
+export interface AkshayaResidencyData {
+  projectName: string;
+  tagline: string;
+  subtitle: string;
+  developer: {
+    name: string;
+    officeAddress: string[];
+    siteAddress: string[];
+    phones: string[];
+    architect: {
+      name: string;
+      address: string[];
+      phone: string;
+    };
+  };
+  approvals: {
+    hmda: boolean;
+    tsRera: boolean;
+  };
+  overview: {
+    highlights: string[];
+    descriptionParagraphs: string[];
+  };
+  unitConfigurations: FlatUnit[];
+  amenities: Amenity[];
+  specifications: Specification[];
+  locationAdvantages: LocationDriveTime[];
+  importantNotes: string[];
+  images: {
+    brochurePages: string[];
+    elevation: string[];
+    floorPlans: string[];
+    amenities: string[];
+  };
+}
+
+export const akshayaResidencyData: AkshayaResidencyData = {
+  projectName: "AKSHAYA RESIDENCY",
+  tagline: "Class, Quality & Comfort Under One Roof",
+  subtitle: "Luxurious 2 & 3 BHK Apartments @ Kollur",
+  developer: {
+    name: "SRINIDHI CONSTRUCTIONS",
+    officeAddress: [
+      "Indraprastha Residency",
+      "Back side of Keshav Reddy School",
+      "Bachupally Village, Nizampet",
+      "Medchal-Malkajgiri District",
+      "Hyderabad, Telangana - 500090"
+    ],
+    siteAddress: [
+      "Sy No 104/A1 & A2",
+      "Edulanagulapally, Kollur Rd",
+      "Ramachandrapuram Mandal",
+      "Tellapur Municipality",
+      "Hyderabad, Telangana - 502300"
+    ],
+    phones: ["+91 98854 48047", "+91 97054 66666"],
+    architect: {
+      name: "ARCHI WING STUDIO",
+      address: [
+        "2nd Floor, Ravisankar Arcade",
+        "Behind Care Hospital Line",
+        "Jayabheri Pine Valley, Gachibowli",
+        "Hyderabad"
+      ],
+      phone: "+91 98858 23482"
+    }
+  },
+  approvals: {
+    hmda: true,
+    tsRera: true
+  },
+  overview: {
+    highlights: [
+      "100% Vaastu Compliant",
+      "Centrally Located in Kollur Near ORR Exit 2",
+      "Rich Architecture & Hitech Quality",
+      "Adequate Ventilation & Spacious Room Designs",
+      "Ample Parking Space Across 2 Basements & Stilt",
+      "Close to Top International Schools",
+      "Pollution Free Environment",
+      "Clear Title & HMDA / TS-RERA Approved"
+    ],
+    descriptionParagraphs: [
+      "Akshaya Residency is a fresh, novel & distinct luxury residential offering at Kollur by Srinidhi Constructions. Designed according to Vaastu, it features open spaces, tot-lots, and walking tracks all around the project site.",
+      "With two decades of experience in crafting homes, Srinidhi Constructions brings high-standard living with spectacular appreciation potential near Hyderabad's IT corridors and Outer Ring Road."
+    ]
+  },
+  unitConfigurations: [
+    { flatNo: "Flat No. 1", type: "3 BHK", facing: "East Facing", areaSft: 2480, image: "/akshaya/page_4.jpg" },
+    { flatNo: "Flat No. 2", type: "2 BHK / 3 BHK", facing: "North/East", areaSft: 1846 },
+    { flatNo: "Flat No. 3", type: "2 BHK", facing: "North", areaSft: 1380 },
+    { flatNo: "Flat No. 4", type: "2 BHK", facing: "North", areaSft: 1380 },
+    { flatNo: "Flat No. 5", type: "3 BHK", facing: "East Facing", areaSft: 2842, image: "/akshaya/page_5.jpg" },
+    { flatNo: "Flat No. 6", type: "3 BHK", facing: "West Facing", areaSft: 2500, image: "/akshaya/page_5.jpg" },
+    { flatNo: "Flat No. 7", type: "3 BHK", facing: "West", areaSft: 1846 },
+    { flatNo: "Flat No. 8", type: "3 BHK", facing: "West", areaSft: 1846 },
+    { flatNo: "Flat No. 9", type: "2 BHK", facing: "West", areaSft: 1379 },
+    { flatNo: "Flat No. 10", type: "3 BHK", facing: "West Facing", areaSft: 2032, image: "/akshaya/page_5.jpg" }
+  ],
+  amenities: [
+    { name: "Club House", category: "1st Floor", description: "State-of-the-art community clubhouse for social gatherings and functions." },
+    { name: "Gym Area", category: "1st Floor", description: "Fully equipped gymnasium (26'3\" x 28'1\") with modern cardio and strength equipment." },
+    { name: "Yoga Hall", category: "1st Floor", description: "Peaceful yoga and meditation space (31'2\" x 25'2\")." },
+    { name: "Indoor Games", category: "1st Floor", description: "Dedicated indoor recreation zone (40'5\" x 29'1\")." },
+    { name: "Multipurpose Hall / Banquet", category: "1st Floor", description: "Spacious multipurpose hall (40'1\" x 50'1\") for birthday parties and mini functions." },
+    { name: "24/7 CCTV Surveillance", category: "General", description: "Complete security coverage at main entry gates, common areas, and parking." },
+    { name: "Children Play Area / Tot-Lots", category: "Stilt/Outdoor", description: "Safe outdoor play zone with swings, slides, and activity frames." },
+    { name: "Walking Track", category: "Stilt/Outdoor", description: "Paved walking track surrounding the lush landscaped open spaces." }
+  ],
+  specifications: [
+    { category: "FOUNDATION & STRUCTURE", details: "RCC Frame Structure engineered to withstand seismic loads." },
+    { category: "WALLS", details: "9\" thick external walls and 4.5\" internal walls with premium cement bricks." },
+    { category: "DOORS", details: "Main Door: Teak wood frame with veneered flush door. Internal Doors: Engineered wood frames with flush doors." },
+    { category: "WINDOWS", details: "UPVC windows with glass sliding shutters and integrated mosquito mesh." },
+    { category: "FLOORING", details: "Premium quality vitrified tiles for living, dining, and bedrooms. Ceramic tiled flooring for utility. Staircase finished with Granite." },
+    { category: "PAINTING", details: "Interiors: Premium emulsion paint (Asian/Berger/Equivalent). Exteriors: Water proof exterior emulsion paint." },
+    { category: "KITCHEN", details: "Granite platform with stainless steel sink. 2' height ceramic tiled dado above cooking platform." },
+    { category: "TOILETS", details: "Anti-skid ceramic tiled flooring, premium wall tiles, and waterproof WPC doors." },
+    { category: "SANITARY", details: "Jaquar / Asian bathware or equivalent CP fittings & sanitary ware." },
+    { category: "ELECTRICAL", details: "Concealed copper wiring (Finolex/Havells/Finecab/RR Kable). Modular switches (Havells/Legrand/Equivalent)." },
+    { category: "LIFT", details: "Johnson or equivalent high-speed passenger lifts." },
+    { category: "POWER BACKUP", details: "Generator backup for common area lighting, clubhouse, lifts, water pumps, plus 2 light and 2 fan points in each apartment." },
+    { category: "TV & WI-FI", details: "TV points in Living room and Master bedroom; Wi-Fi enabled infrastructure." },
+    { category: "SECURITY", details: "Advanced 24/7 security with CCTV surveillance at main entrance gate." }
+  ],
+  locationAdvantages: [
+    { destination: "Delhi Public School (Kollur)", timeMinutes: "10 Mins", category: "Schools & Colleges" },
+    { destination: "Meru International School", timeMinutes: "10 Mins", category: "Schools & Colleges" },
+    { destination: "Samishti International School", timeMinutes: "10 Mins", category: "Schools & Colleges" },
+    { destination: "The Gaudium School", timeMinutes: "10 Mins", category: "Schools & Colleges" },
+    { destination: "ICFAI Business School, Mokila", timeMinutes: "10 Mins", category: "Schools & Colleges" },
+    { destination: "CBIT College", timeMinutes: "15 Mins", category: "Schools & Colleges" },
+    { destination: "Edulanagulapally ORR Exit - 2", timeMinutes: "05 Mins", category: "Connectivity" },
+    { destination: "Financial District (Nanakramguda / Gachibowli)", timeMinutes: "10 Mins", category: "Connectivity" },
+    { destination: "Gachibowli Junction", timeMinutes: "15 Mins", category: "Connectivity" },
+    { destination: "PB Cricket Ground, Kollur", timeMinutes: "20 Mins", category: "Connectivity" }
+  ],
+  importantNotes: [
+    "Shelves, Chajjas, Lofts, Arches or structural modifications are not allowed.",
+    "Flats will be handed over upon 100% payment only.",
+    "Registration, GST, and applicable government taxes extra."
+  ],
+  images: {
+    brochurePages: [
+      "/akshaya/page_1.jpg",
+      "/akshaya/page_2.jpg",
+      "/akshaya/page_3.jpg",
+      "/akshaya/page_4.jpg",
+      "/akshaya/page_5.jpg",
+      "/akshaya/page_6.jpg",
+      "/akshaya/page_7.jpg",
+      "/akshaya/page_8.jpg"
+    ],
+    elevation: ["/akshaya/page_1.jpg", "/akshaya/page_2.jpg", "/akshaya/page_3.jpg"],
+    floorPlans: ["/akshaya/page_4.jpg", "/akshaya/page_5.jpg"],
+    amenities: ["/akshaya/page_6.jpg", "/akshaya/page_7.jpg"]
+  }
+};
+
+export default akshayaResidencyData;

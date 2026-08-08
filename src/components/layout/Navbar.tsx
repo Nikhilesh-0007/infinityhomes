@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
           {/* Logo */}
           <NavLink to="/" className="flex items-center group py-0.5">
             <img
-              src="/Main_Logo_PNG.png"
+              src="/Main_Logo_PNG copy.png"
               alt="Infinity Homes Logo"
               className="h-12 sm:h-14 md:h-16 w-auto object-contain group-hover:scale-105 transition-transform"
             />

@@ -3,20 +3,17 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import fs from 'fs';
 
-// Automatically copy logo from Downloads to public directory if present
-const logoSource = 'C:/Users/bojja/Downloads/Main_Logo_PNG.png';
-const logoDestDir = path.resolve(__dirname, './public');
-const logoDest = path.resolve(logoDestDir, 'Main_Logo_PNG.png');
+// Copy Main_Logo_PNG copy.png to Main_Logo_PNG.png if present in public
+const publicDir = path.resolve(__dirname, './public');
+const logoCopyPath = path.resolve(publicDir, 'Main_Logo_PNG copy.png');
+const logoDestPath = path.resolve(publicDir, 'Main_Logo_PNG.png');
 
 try {
-  if (fs.existsSync(logoSource)) {
-    if (!fs.existsSync(logoDestDir)) {
-      fs.mkdirSync(logoDestDir, { recursive: true });
-    }
-    fs.copyFileSync(logoSource, logoDest);
+  if (fs.existsSync(logoCopyPath)) {
+    fs.copyFileSync(logoCopyPath, logoDestPath);
   }
 } catch (e) {
-  console.error('Logo copy error:', e);
+  console.error('Logo sync error:', e);
 }
 
 // https://vitejs.dev/config/
@@ -30,5 +27,8 @@ export default defineConfig({
   server: {
     port: 5173,
     host: true,
+    watch: {
+      ignored: ['**/*.~tmp', '**/*.tmp'],
+    },
   },
 });
